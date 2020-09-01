@@ -7,15 +7,66 @@
   background-color: #FFFFFF;
 }
 
-.main_head {
+.main_header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main_content {
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.content {
+  margin: 10px 0;
+}
+
+.chat_information{
+  display: flex;
+}
+
+.chat_user {
+  font-size: 16px;
+  color: #434a54;
+  /* margin-right: 10px; */
+}
+
+.chat_datetime {
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+
+.chat_content {
+  margin-top: 10px;
+  /* この記述が分からない */
+}
+
+.chat_text {
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
+}
+
+.close_room {
+  margin-top: 40px;
+}
+
+.close_room a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+.main_contents {
   height: calc(100vh - 100px - 90px);
   background-color: #FAFAFA;
   padding: 46px 40px 0;
+  overflow: scroll;
 }
 
 .main_foot {
@@ -28,6 +79,7 @@
   width: 300px;
   background-color: #253141;
   height: 100vh;
+  /* paddingを親要素に掛けると下地が見える */
 }
 
 .side_head {
@@ -72,4 +124,50 @@
 .room-name a {
   text-decoration: none;
   color: white;
+}
+
+.main_footer {
+  display: flex;
+  background-color: #DDD;
+  padding: 20px 40px;
+}
+
+.form {
+  background-color: white;
+  display: flex;
+  /* この上の記述 */
+  width: 100%;
+  /* padding等の記述を含まない */
+  padding-left: 10px;
+}
+
+.chat_form {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
